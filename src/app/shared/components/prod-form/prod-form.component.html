@@ -1,0 +1,20 @@
+<form [formGroup]="prodForm" (ngSubmit)="onProdAdd()">
+
+    <div class="form-group">
+        <label for="pName">Product Name</label>
+        <input class="form-control" type="text" formControlName = "pName" id="pName">
+    </div>
+
+    <div class="form-group">
+        <label for="pStatus">Product Name</label>
+        <select class="form-control" name="pStatus" formControlName = "pStatus" id="pStatus">
+            <option value="InProgress">In Progress</option>
+            <option value="Dispatched">Dispatched</option>
+            <option value="Delivered">Delivered</option>
+        </select>
+    </div>
+    <div class="text-right">
+        <button class="btn btn-success">Add Product</button>
+    </div>
+
+</form>
